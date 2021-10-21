@@ -28,6 +28,11 @@ struct ContentView: View {
             }
             
             VStack {
+                
+            // ***********************************
+            // ****** Button to display name     *
+            // ***********************************
+                
                 Button(action:
                                            {
                                        print("hellox swift!")
@@ -41,10 +46,23 @@ struct ContentView: View {
                                         }
                                         .alert(isPresented: $alertisvisible) { () -> Alert in
                                             Alert(title: Text("Name Title."), message: Text("Name is \(self.name)"), dismissButton: .default(Text("Ok")))}
-                Menu("Ordering Menu Options") {
+                
+                
+                // ***********************************
+                // ****** Menu to order stuff        *
+                // ***********************************
+                
+                Menu("Ordering Menu Options")
+                {
                             Button("Order Now", action: placeOrder)
                             Button("Adjust Order", action: adjustOrder)
-                    Button("Cancel", action: cancelOrder)}
+                            Button("Cancel", action: cancelOrder)
+                }
+                
+                // ***********************************
+                // ****** Form to enter name         *
+                // ***********************************
+                
                 Form {
                     Section {
                             TextField("Enter Name: ", text: $name)
@@ -52,6 +70,13 @@ struct ContentView: View {
                             .background(Color.yellow)
                             .opacity(10.3)
                         }
+                    
+                    VStack(alignment: .leading)
+                    {
+                    Text("Placing Order")
+                            .multilineTextAlignment(.center)
+                   Image("hamburger")
+                    }
                     
                     // 4 } follow this
                 }
@@ -63,5 +88,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        ContentView()
+        .previewLayout(.fixed(width: 468, height: 320))
     }
 }
