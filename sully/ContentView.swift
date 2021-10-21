@@ -27,7 +27,7 @@ struct ContentView: View {
                 
             }
             
-            HStack {
+            VStack {
                 Button(action:
                                            {
                                        print("hellox swift!")
@@ -44,6 +44,9 @@ struct ContentView: View {
                 Form {
                     Section {
                             TextField("Enter Name: ", text: $name)
+                            .foregroundColor(.black)
+                            .background(Color.yellow)
+                            .opacity(10.3)
                         }
                     
                     // 4 } follow this
