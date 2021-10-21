@@ -41,6 +41,10 @@ struct ContentView: View {
                                         }
                                         .alert(isPresented: $alertisvisible) { () -> Alert in
                                             Alert(title: Text("Name Title."), message: Text("Name is \(self.name)"), dismissButton: .default(Text("Ok")))}
+                Menu("Ordering Menu Options") {
+                            Button("Order Now", action: placeOrder)
+                            Button("Adjust Order", action: adjustOrder)
+                    Button("Cancel", action: cancelOrder)}
                 Form {
                     Section {
                             TextField("Enter Name: ", text: $name)
