@@ -12,8 +12,6 @@
 		5CB8A0DC2721BDB800D45E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB8A0DB2721BDB800D45E81 /* Assets.xcassets */; };
 		5CB8A0DF2721BDB800D45E81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB8A0DE2721BDB800D45E81 /* Preview Assets.xcassets */; };
 		5CB8A0E92721BDB800D45E81 /* sullyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8A0E82721BDB800D45E81 /* sullyTests.swift */; };
-		5CB8A0F32721BDB800D45E81 /* sullyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8A0F22721BDB800D45E81 /* sullyUITests.swift */; };
-		5CB8A0F52721BDB800D45E81 /* sullyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8A0F42721BDB800D45E81 /* sullyUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +40,6 @@
 		5CB8A0E42721BDB800D45E81 /* sullyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sullyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB8A0E82721BDB800D45E81 /* sullyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sullyTests.swift; sourceTree = "<group>"; };
 		5CB8A0EE2721BDB800D45E81 /* sullyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sullyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CB8A0F22721BDB800D45E81 /* sullyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sullyUITests.swift; sourceTree = "<group>"; };
-		5CB8A0F42721BDB800D45E81 /* sullyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sullyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +72,6 @@
 			children = (
 				5CB8A0D62721BDB500D45E81 /* sully */,
 				5CB8A0E72721BDB800D45E81 /* sullyTests */,
-				5CB8A0F12721BDB800D45E81 /* sullyUITests */,
 				5CB8A0D52721BDB500D45E81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,15 +111,6 @@
 				5CB8A0E82721BDB800D45E81 /* sullyTests.swift */,
 			);
 			path = sullyTests;
-			sourceTree = "<group>";
-		};
-		5CB8A0F12721BDB800D45E81 /* sullyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5CB8A0F22721BDB800D45E81 /* sullyUITests.swift */,
-				5CB8A0F42721BDB800D45E81 /* sullyUITestsLaunchTests.swift */,
-			);
-			path = sullyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CB8A0F52721BDB800D45E81 /* sullyUITestsLaunchTests.swift in Sources */,
-				5CB8A0F32721BDB800D45E81 /* sullyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,20 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var name = "bob"
+    @State private var alertisvisible: Bool = false
     var body: some View {
         VStack {
-            Text("Hello, Robert!")
+            VStack {
+                Text("Hello, Robert!")
+                    .padding()
+                Button(action: {}) {
+                    Text("Sully's Button")
+                    
+                }
                 .padding()
-            Button(action: {}) {
-                Text("Sully's Button")
+                .padding()
+                Link("Visit Google", destination: URL(string: "https://www.google.com")!)
+                    .font(.title)
+                    .foregroundColor(.blue)
                 
             }
-            .padding()
-            .padding()
-            Link("Visit Google", destination: URL(string: "https://www.google.com")!)
-                .font(.title)
-                .foregroundColor(.blue)
             
+            HStack {
+                Button(action:
+                                           {
+                                       print("hellox swift!")
+                                       self.alertisvisible = true
+                               
+                                           }
+                                         )
+                                        {
+                                            Text ("Hit me please. ")
+                                              .bold()
+                                        }
+                                        .alert(isPresented: $alertisvisible) { () -> Alert in
+                                            Alert(title: Text("Alert Title."), message: Text("Hit me please. name is \(self.name)"), dismissButton: .default(Text("Ok")))}
+                Form {
+                    Section {
+                            TextField("Enter Name: ", text: $name)
+                        }
+                    
+                    // 4 } follow this
+                }
+            }
         }
     }
 }
