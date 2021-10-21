@@ -9,8 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        VStack {
+            Text("Hello, Robert!")
+                .padding()
+            Button(action: {}) {
+                Text("Sully's Button")
+                
+            }
             .padding()
+            .padding()
+            Link("Visit Google", destination: URL(string: "https://www.google.com")!)
+                .font(.title)
+                .foregroundColor(.blue)
+            
+        }
     }
 }
 
