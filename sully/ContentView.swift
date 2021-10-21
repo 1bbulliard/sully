@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var name = "bob"
+    @State private var name = ""
     @State private var alertisvisible: Bool = false
     var body: some View {
         VStack {
@@ -40,7 +40,7 @@ struct ContentView: View {
                                               .bold()
                                         }
                                         .alert(isPresented: $alertisvisible) { () -> Alert in
-                                            Alert(title: Text("Alert Title."), message: Text("Hit me please. name is \(self.name)"), dismissButton: .default(Text("Ok")))}
+                                            Alert(title: Text("Name Title."), message: Text("Name is \(self.name)"), dismissButton: .default(Text("Ok")))}
                 Form {
                     Section {
                             TextField("Enter Name: ", text: $name)
